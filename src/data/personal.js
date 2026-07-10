@@ -3,7 +3,7 @@ export const personal = {
   shortName: 'Sumit',
   title: 'Full-Stack Developer & Competitive Programmer',
   location: 'Mansa, Punjab, India',
-  email: 'contact@thedevsumit.me',
+  email: '84kumarsumit@gmail.com',
   pronouns: 'he/him',
   brandMark: '{ SUMIT }',
   tagline: 'Building complete products, solving real problems, designing experiences that feel alive.',
@@ -13,7 +13,6 @@ export const roles = [
   'Full-Stack Developer',
   'Competitive Programmer',
   'MERN Stack Builder',
-  'Creative Frontend Developer',
 ]
 
 export const capabilities = [
@@ -22,7 +21,6 @@ export const capabilities = [
   'Authentication',
   'REST APIs',
   'P2P Networking',
-  '3D Interfaces',
   'State Management',
   'Competitive Programming',
 ]

@@ -5,13 +5,13 @@ import { Send, MessageCircle, Smile, Users } from "lucide-react";
 import { cn } from "../../../utils/cn";
 
 const PEER_REPLIES = {
-  hi: ["Hey! Nigga Did my site snapped?", "Hi wassup dawgg", "Hey! cutiepie"],
+  hi: ["Hey Nigga! did my site snapped?", "Hi wassup dawgg", "Hey! cutiepie"],
   react: [
-    "❤️ am in love with you",
-    "haha amma kick you ass nigga",
-    "🙌 lmao you are too unfunny",
+    "I am in love with you!",
+    "Haha amma kick you ass nigga!",
+    "Lmao you are too unfunny!",
   ],
-  default: ["TBSM4L", "Listen to Kohra!", "Listen to Gandi Aulaad!"],
+  default: ["Listen to Ghar by Bharat Chauhan!", "Listen to Kohra!", "Listen to Gandi Aulaad!"],
 };
 
 const pickReply = (text) => {

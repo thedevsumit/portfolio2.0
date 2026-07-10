@@ -58,12 +58,12 @@ export const ProjectShowcase = ({ project, reverse = false }) => {
           <p className="text-[10px] font-mono uppercase tracking-widest text-faint mb-2 inline-flex items-center gap-2">
             <Cpu size={11} /> architecture
           </p>
-          <pre
-            className="text-[11px] md:text-xs font-mono text-mint-500 bg-[var(--elev-1)] border border-[var(--border-soft)] rounded-[var(--radius-md)] p-3 overflow-x-auto"
+          <p
+            className="text-[11px] md:text-xs font-mono text-mint-500 bg-[var(--elev-1)] border border-[var(--border-soft)] rounded-[var(--radius-md)] p-3"
             style={{ borderColor: `${project.accent}33` }}
           >
             {project.architecture}
-          </pre>
+          </p>
         </div>
 
         <div className="flex flex-wrap gap-1.5">

@@ -229,7 +229,7 @@ export const CamporaPreview = ({ liveUrl }) => {
         </div>
       </div>
 
-      <div className="flex h-[340px]">
+      <div className="flex flex-wrap overflow-y-scroll h-[340px]">
         {}
         <div className="w-[42%] border-r border-[var(--border-soft)] p-2.5 space-y-1 overflow-y-auto bg-[var(--elev-1)]">
           <p className="text-[9px] font-mono uppercase tracking-widest text-faint px-2 mb-1.5">
