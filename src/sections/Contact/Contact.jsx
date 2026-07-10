@@ -171,7 +171,7 @@ export const Contact = () => {
                   value={form.name}
                   onChange={onChange('name')}
                   className={cn('input-base', errors.name && 'input-error')}
-                  placeholder="Ada Lovelace"
+                  placeholder="thenondevsumit"
                   aria-invalid={!!errors.name}
                   aria-describedby={errors.name ? 'name-err' : undefined}
                 />
@@ -187,7 +187,7 @@ export const Contact = () => {
                   value={form.email}
                   onChange={onChange('email')}
                   className={cn('input-base', errors.email && 'input-error')}
-                  placeholder="ada@compute.io"
+                  placeholder="contact@devsumit.codes"
                   aria-invalid={!!errors.email}
                   aria-describedby={errors.email ? 'email-err' : undefined}
                 />
