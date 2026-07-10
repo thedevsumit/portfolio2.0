@@ -1,0 +1,85 @@
+export const projects = [
+  {
+    id: "winsdrop",
+    number: "01",
+    title: "WinDrop",
+    tagline: "High-performance peer-to-peer file sharing powered by MERN and C++",
+    description:
+      "WinDrop combines a modern React interface with a native C++ networking core for peer discovery and direct file transmission.",
+    longDescription:
+      "WinDrop is a peer-to-peer file-sharing application built using a hybrid React, Node.js, Express, and C++ architecture. The web layer provides an accessible interface for managing file-sharing sessions, while the native C++ layer handles peer discovery and direct socket-based file transmission. The system separates responsibilities into three layers — a React frontend for user interaction, a Node.js + Express backend for application coordination, and a C++ networking core that manages peer discovery and direct socket-based transmission between peers.",
+    status: "completed",
+    featured: true,
+    year: "2026",
+    stack: ["React", "Node.js", "Express", "C++"],
+    features: [
+      "Direct peer-to-peer file transfer",
+      "Native C++ socket-based networking",
+      "Lighthouse-style peer discovery",
+      "Chunk-based file transmission",
+      "Sender and receiver communication",
+      "React-based web interface",
+      "Node.js and Express coordination layer",
+      "Automated startup and C++ compilation",
+      "Graceful process cleanup",
+    ],
+    architecture:
+      "React Frontend → HTTP / Signaling → Node.js + Express → Process Coordination → C++ Networking Core → Direct Socket Transfer → Peer ↔ Peer",
+    links: { github: "https://github.com/thedevsumit/WinDrop", live: null },
+    accent: "#00a8e8",
+  },
+  {
+    id: "chatlly",
+    number: "02",
+    title: "Chatlly",
+    tagline: "Real-time MERN chat platform",
+    description:
+      "A real-time chat platform built on the MERN stack with Socket.IO, supporting one-to-one and group conversations, online presence, and live event streaming.",
+    longDescription:
+      "Chatlly is a complete real-time chat platform. It supports one-to-one and group messaging, presence indicators, typing notifications, message persistence, and secure authentication. The backend emits granular events over Socket.IO that the client subscribes to and renders reactively.",
+    status: "completed",
+    featured: true,
+    year: "2025",
+    stack: ["MongoDB", "Express", "React", "Node.js", "Socket.IO", "JWT"],
+    features: [
+      "One-to-one and group conversations",
+      "Real-time presence and typing indicators",
+      "JWT-based authentication with refresh flow",
+      "Message persistence with pagination",
+    ],
+    architecture: "React client → REST + Socket.IO → Express API → MongoDB",
+    links: { github: "https://github.com/thedevsumit", live: "https://gochatlly.onrender.com/" },
+    accent: "#20cfc8",
+  },
+  {
+    id: "campora",
+    number: "03",
+    title: "Campora",
+    tagline: "Full-stack club & event platform",
+    description:
+      "A platform for discovering, managing, and participating in campus clubs and events. Includes real-time updates, membership workflows, and media management.",
+    longDescription:
+      "Campora is a MERN + Socket.IO platform with Cloudinary media management, Google OAuth, and JWT-based session security. It handles club discovery, event creation, member workflows, and live updates for attendees.",
+    status: "completed",
+    featured: true,
+    year: "2026",
+    stack: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "Socket.IO",
+      "Cloudinary",
+      "JWT",
+    ],
+    features: [
+      "Club discovery and event management",
+      "Real-time event updates and notifications",
+      "Cloudinary-backed media workflows",
+      "JWT authentication and RBAC formation",
+    ],
+    architecture: "React → Express REST + Sockets → MongoDB / Cloudinary",
+    links: { github: "https://github.com/thedevsumit/Campora", live: "https://campora-8kb0.onrender.com/" },
+    accent: "#a6fff3",
+  },
+];

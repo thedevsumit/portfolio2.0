@@ -1,0 +1,42 @@
+export const chess = {
+  handle: 'thedevsumit',
+  url: 'https://www.chess.com/member/thedevsumit',
+  ratings: [
+    {
+      id: 'rapid',
+      label: 'Rapid',
+      rating: 1865,
+      piece: 'king',
+      games: 412,
+      winRate: 54,
+      color: '#00a8e8',
+    },
+    {
+      id: 'puzzles',
+      label: 'Puzzles',
+      rating: 2448,
+      piece: 'bishop',
+      games: 1240,
+      winRate: 91,
+      color: '#a6fff3',
+    },
+    {
+      id: 'bullet',
+      label: 'Bullet',
+      rating: 1467,
+      piece: 'knight',
+      games: 980,
+      winRate: 51,
+      color: '#20cfc8',
+    },
+    {
+      id: 'blitz',
+      label: 'Blitz',
+      rating: 1710,
+      piece: 'queen',
+      games: 612,
+      winRate: 53,
+      color: '#00bfff',
+    },
+  ],
+}

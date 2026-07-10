@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 px-6 py-3 rounded-pill font-medium text-sm whitespace-nowrap transition-all duration-300 overflow-hidden align-middle;
+    background: var(--brand-gradient);
+    background-size: 200% 200%;
+    color: #0a0d14;
+    box-shadow: var(--shadow-glow);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 48px rgba(0, 168, 232, 0.45);
+  }
+  .btn-primary:active {
+    transform: translateY(0);
+  }
+  .btn-ghost {
+    @apply relative inline-flex items-center justify-center gap-2 px-6 py-3 rounded-pill font-medium text-sm whitespace-nowrap transition-all duration-300 align-middle;
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-soft);
+  }
+  .btn-ghost:hover {
+    border-color: var(--brand-cyan);
+    color: var(--brand-mint);
+    background: rgba(0, 168, 232, 0.06);
+  }
+  .chip {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-pill text-xs font-mono;
+    background: var(--elev-2);
+    border: 1px solid var(--border-soft);
+    color: var(--text-secondary);
+  }
+  .section-eyebrow {
+    @apply inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] font-mono;
+    color: var(--brand-cyan);
+  }
+  .section-title {
+    @apply text-balance font-semibold text-primary;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+  }
+}
