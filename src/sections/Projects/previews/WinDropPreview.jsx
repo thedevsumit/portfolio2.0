@@ -103,13 +103,21 @@ export const WinDropPreview = ({ liveUrl }) => {
 
   useEffect(() => () => clearTimers(), [])
 
-  const onPickFile = (e) => {
-    const f = e.target.files?.[0]
-    if (f) {
-      setFile({ name: f.name, size: f.size })
-      reset()
-    }
-  }
+ const onPickFile = (e) => {
+   const f = e.target.files?.[0];
+
+   if (f) {
+     const trimmedName =
+       f.name.length > 20 ? f.name.slice(0, 12) + "..." : f.name;
+
+     setFile({
+       name: trimmedName,
+       size: f.size,
+     });
+
+     reset();
+   }
+ };
 
   const reset = () => {
     clearTimers()
@@ -195,6 +203,7 @@ export const WinDropPreview = ({ liveUrl }) => {
             fileSize={file?.size}
             progress={youProgress}
             stageIndex={Math.max(stageIndex, 0)}
+            className={"overflow-hidden"}
           />
           <PeerPane
             side="peer"
